@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    weather_web:
+        image: php:8.2-apache 
+        build: ./docker/
+        container_name: weather_web
+        ports: 
+            - "8000:80"
+        volumes:
+            - ./docker/conf/000-default.conf:/etc/apache2/sites-available/000-default.conf
+            - ./weather:/var/www/html
