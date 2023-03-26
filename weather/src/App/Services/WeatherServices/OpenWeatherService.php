@@ -2,6 +2,8 @@
 
 namespace App\Services\WeatherServices;
 
-class OpenWeatherService {
+use App\Services\WeatherServicesInteface;
+
+class OpenWeatherService implements WeatherServicesInteface {
     //put your code here
 }

@@ -1,3 +1,7 @@
 hompeage:
     path: /
     controller: App\Controller\WeatherController::index
+    
+searchWeather:
+    path: /weather/search
+    controller: App\Controller\WeatherController::searchWeather

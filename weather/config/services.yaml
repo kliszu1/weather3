@@ -25,6 +25,16 @@ services:
         
     App\Services\:
         resource: '../src/App/Services/'
+        
+    App\Hydrator\:
+        resource: '../src/App/Hydrator/'
+
+    App\Enum\:
+        resource: '../src/App/Enum/'
+        
+    App\ValueObject\:
+        resource: '../src/App/ValueObject/'
+
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
